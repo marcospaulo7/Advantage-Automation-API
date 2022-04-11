@@ -23,7 +23,7 @@ Voce precisa ter instalado e configurado em sua maquina:
 
 Abra seu terminal de comando e rode o seguinte comando (escolha uma pasta para isso)
 ```
-git clone https://github.com/marcospaulo7/automationAPIWeather
+git clone https://github.com/marcospaulo7/Advantage-Automation-API.git
 ```
 
 ### 🔧 Instalação
