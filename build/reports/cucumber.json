@@ -1,0 +1,1243 @@
+[
+  {
+    "line": 8,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-11T15:36:30.558Z",
+        "before": [
+          {
+            "result": {
+              "duration": 315205000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.br.advantage.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Retornar mensagem de sucesso com status true quando criar um novo usuario",
+        "description": "",
+        "id": "cenarios-contemplando-a-criação-de-uma-nova-conta-de-usuário--realizar-login-e-logout-do-mesmo;retornar-mensagem-de-sucesso-com-status-true-quando-criar-um-novo-usuario",
+        "after": [
+          {
+            "result": {
+              "duration": 923160200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.br.advantage.steps.AccountSteps.clearUser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14509000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 96501600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "um usuario que nao tenha cadastro",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nao",
+                  "offset": 15
+                }
+              ],
+              "location": "com.br.advantage.steps.AccountSteps.queQueiraRealizarUmNovoCadastro(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "loginName",
+                  "password",
+                  "email",
+                  "firstName",
+                  "lastName",
+                  "phoneNumber",
+                  "stateProvince",
+                  "zipCode",
+                  "address",
+                  "allowOffers",
+                  "aobUser",
+                  "cityName",
+                  "country"
+                ]
+              },
+              {
+                "cells": [
+                  "marcosP",
+                  "Mudar123",
+                  "mp@email.com",
+                  "marcos",
+                  "paulo",
+                  "123456789",
+                  "SP",
+                  "06516090",
+                  "ruaexemplo",
+                  "true",
+                  "true",
+                  "barueri",
+                  "BRAZIL"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 972241800,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 38141600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "preencher o cadastro corretamente",
+            "match": {
+              "location": "com.br.advantage.steps.AccountSteps.preencherOCadastroComDadosCorretos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 299584700,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1005800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "é retornado uma mensagem de sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sucesso",
+                  "offset": 28
+                }
+              ],
+              "location": "com.br.advantage.steps.AccountSteps.deveSerRetornadoUmBodyDeStatus(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "message",
+                  "success"
+                ]
+              },
+              {
+                "cells": [
+                  "New user created successfully.",
+                  "true"
+                ]
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountService"
+          },
+          {
+            "name": "@CreateNewUser"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-11T15:36:33.286Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.br.advantage.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Retornar mensagem de sucesso com status false quando tentar criar um novo usuario",
+        "description": "  com login Name ou senha invalidos",
+        "id": "cenarios-contemplando-a-criação-de-uma-nova-conta-de-usuário--realizar-login-e-logout-do-mesmo;retornar-mensagem-de-sucesso-com-status-false-quando-tentar-criar-um-novo-usuario",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1094900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "um usuario que nao tenha cadastro",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nao",
+                  "offset": 15
+                }
+              ],
+              "location": "com.br.advantage.steps.AccountSteps.queQueiraRealizarUmNovoCadastro(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "loginName",
+                  "password",
+                  "email",
+                  "firstName",
+                  "lastName",
+                  "phoneNumber",
+                  "stateProvince",
+                  "zipCode",
+                  "address",
+                  "allowOffers",
+                  "aobUser",
+                  "cityName",
+                  "country"
+                ]
+              },
+              {
+                "cells": [
+                  "Marcos",
+                  "invalidpassword",
+                  "marcos@email.com",
+                  "marcos",
+                  "paulo",
+                  "123456789",
+                  "SP",
+                  "06516090",
+                  "ruaexemplo",
+                  "true",
+                  "true",
+                  "barueri",
+                  "BRAZIL"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 405076700,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1010300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 27,
+            "name": "preencher o cadastro com login Name ou senha invalidos",
+            "match": {
+              "location": "com.br.advantage.steps.AccountSteps.preencherOCadastroComDadosCorretos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 10516400,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1019300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 28,
+            "name": "é retornado uma mensagem de erro",
+            "match": {
+              "arguments": [
+                {
+                  "val": "erro",
+                  "offset": 28
+                }
+              ],
+              "location": "com.br.advantage.steps.AccountSteps.deveSerRetornadoUmBodyDeStatus(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "message",
+                  "success"
+                ]
+              },
+              {
+                "cells": [
+                  "Incorrect user name or password.",
+                  "false"
+                ]
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountService"
+          },
+          {
+            "name": "@CreateNewUserInvalidLoginOrPassword"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-11T15:36:33.711Z",
+        "before": [
+          {
+            "result": {
+              "duration": 998700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.br.advantage.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Retornar mensagem de sucesso com status false quando tentar criar um usuario ja existente",
+        "description": "",
+        "id": "cenarios-contemplando-a-criação-de-uma-nova-conta-de-usuário--realizar-login-e-logout-do-mesmo;retornar-mensagem-de-sucesso-com-status-false-quando-tentar-criar-um-usuario-ja-existente",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 999200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 34,
+            "name": "um usuario que ja tenha cadastro",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ja",
+                  "offset": 15
+                }
+              ],
+              "location": "com.br.advantage.steps.AccountSteps.queQueiraRealizarUmNovoCadastro(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "loginName",
+                  "password",
+                  "email",
+                  "firstName",
+                  "lastName",
+                  "phoneNumber",
+                  "stateProvince",
+                  "zipCode",
+                  "address",
+                  "allowOffers",
+                  "aobUser",
+                  "cityName",
+                  "country"
+                ]
+              },
+              {
+                "cells": [
+                  "marcos",
+                  "Mudar123",
+                  "marcos@email.com",
+                  "marcos",
+                  "paulo",
+                  "123456789",
+                  "SP",
+                  "06516090",
+                  "ruaexemplo",
+                  "true",
+                  "true",
+                  "barueri",
+                  "BRAZIL"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 387967200,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 999300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 37,
+            "name": "preencher o cadastro corretamente",
+            "match": {
+              "location": "com.br.advantage.steps.AccountSteps.preencherOCadastroComDadosCorretos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 10522600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1001100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 38,
+            "name": "é retornado uma mensagem de erro",
+            "match": {
+              "arguments": [
+                {
+                  "val": "erro",
+                  "offset": 28
+                }
+              ],
+              "location": "com.br.advantage.steps.AccountSteps.deveSerRetornadoUmBodyDeStatus(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "message",
+                  "success"
+                ]
+              },
+              {
+                "cells": [
+                  "User name already exists",
+                  "false"
+                ]
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountService"
+          },
+          {
+            "name": "@CreatenewUserWithExistingLogin"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-11T15:36:34.117Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.br.advantage.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Validar login com usuario cadastrado",
+        "description": "",
+        "id": "cenarios-contemplando-a-criação-de-uma-nova-conta-de-usuário--realizar-login-e-logout-do-mesmo;validar-login-com-usuario-cadastrado",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1012800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 44,
+            "name": "que tenha um usuario com acesso ao sistema",
+            "match": {
+              "arguments": [
+                {
+                  "val": "com",
+                  "offset": 21
+                }
+              ],
+              "location": "com.br.advantage.steps.AccountSteps.queTenhaUmUsuarioCadastrado(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "loginName",
+                  "password",
+                  "email"
+                ]
+              },
+              {
+                "cells": [
+                  "marcos",
+                  "Mudar123",
+                  "marcos@email.com"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 419484000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1010200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 47,
+            "name": "tentar acessar o sistema com login valido",
+            "match": {
+              "location": "com.br.advantage.steps.AccountSteps.realizarOLoginComEssesDados()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 12497000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 48,
+            "name": "sera retornado uma mensagem de sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sucesso",
+                  "offset": 31
+                }
+              ],
+              "location": "com.br.advantage.steps.AccountSteps.seraRetornadoUmaMensagemDeErro(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "message",
+                  "success"
+                ]
+              },
+              {
+                "cells": [
+                  "Login Successful",
+                  "true"
+                ]
+              }
+            ],
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 12540900,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1003100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 51,
+            "name": "o userId e token  do usuario logado",
+            "match": {
+              "location": "com.br.advantage.steps.AccountSteps.oUserIdETokenDoUsuarioLogado()"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountService"
+          },
+          {
+            "name": "@LoginWithRegisteredUser"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-11T15:36:34.568Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.br.advantage.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 55,
+        "name": "Validar login com usuario nao cadastrado",
+        "description": "",
+        "id": "cenarios-contemplando-a-criação-de-uma-nova-conta-de-usuário--realizar-login-e-logout-do-mesmo;validar-login-com-usuario-nao-cadastrado",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1005100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 56,
+            "name": "que tenha um usuario sem acesso ao sistema",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sem",
+                  "offset": 21
+                }
+              ],
+              "location": "com.br.advantage.steps.AccountSteps.queTenhaUmUsuarioCadastrado(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "loginName",
+                  "password",
+                  "email"
+                ]
+              },
+              {
+                "cells": [
+                  "invalidName",
+                  "invalidpassword",
+                  "marcos@email.com"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 387409600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 59,
+            "name": "inserir os dados do usuario nao cadastrado",
+            "match": {
+              "location": "com.br.advantage.steps.AccountSteps.realizarOLoginComEssesDados()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 10525100,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2004300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 60,
+            "name": "sera retornado uma mensagem de erro",
+            "match": {
+              "arguments": [
+                {
+                  "val": "erro",
+                  "offset": 31
+                }
+              ],
+              "location": "com.br.advantage.steps.AccountSteps.seraRetornadoUmaMensagemDeErro(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "message",
+                  "success"
+                ]
+              },
+              {
+                "cells": [
+                  "Incorrect user name or password.",
+                  "false"
+                ]
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountService"
+          },
+          {
+            "name": "@LoginWithNonRegisteredUser"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-11T15:36:34.973Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.br.advantage.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 65,
+        "name": "Realizar logout com sucesso",
+        "description": "",
+        "id": "cenarios-contemplando-a-criação-de-uma-nova-conta-de-usuário--realizar-login-e-logout-do-mesmo;realizar-logout-com-sucesso",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 424013200,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 998400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 66,
+            "name": "que um usuario esteja logado",
+            "match": {
+              "location": "com.br.advantage.steps.AccountSteps.queEstejaLogado(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "loginName",
+                  "password",
+                  "email"
+                ]
+              },
+              {
+                "cells": [
+                  "marcos",
+                  "Mudar123",
+                  "marcos@email.com"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 417541100,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1005100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 69,
+            "name": "realizar o logout do sistema",
+            "match": {
+              "location": "com.br.advantage.steps.AccountSteps.realizarOLogoutDoSistema()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 12513900,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1021900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 70,
+            "name": "é retornado uma mensagem de sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sucesso",
+                  "offset": 28
+                }
+              ],
+              "location": "com.br.advantage.steps.AccountSteps.deveSerRetornadoUmBodyDeStatus(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "message",
+                  "success"
+                ]
+              },
+              {
+                "cells": [
+                  "Logout Successful",
+                  "true"
+                ]
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountService"
+          },
+          {
+            "name": "@LogouUser"
+          }
+        ]
+      }
+    ],
+    "name": "Cenarios contemplando a criação de uma nova conta de usuário, realizar Login e logout do mesmo",
+    "description": "",
+    "id": "cenarios-contemplando-a-criação-de-uma-nova-conta-de-usuário--realizar-login-e-logout-do-mesmo",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/account/account.feature",
+    "tags": [
+      {
+        "name": "@AccountService",
+        "type": "Tag",
+        "location": {
+          "line": 7,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 9,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-11T15:36:35.833Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.br.advantage.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Validar inserção produto no carrinho",
+        "description": "",
+        "id": "cenarios-contemplando-a-inserçao-de-um-item-no-carrinho;validar-inserção-produto-no-carrinho",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 414865400,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "que um usuario esteja logado",
+            "match": {
+              "location": "com.br.advantage.steps.AccountSteps.queEstejaLogado(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "loginName",
+                  "password",
+                  "email"
+                ]
+              },
+              {
+                "cells": [
+                  "marcos21",
+                  "Mudar123",
+                  "marcos@email.com"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 538469400,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "ele escolher um produto para adicionar no carrinho",
+            "match": {
+              "location": "com.br.advantage.steps.OrderSteps.eleAdicionarUmItemNoCarrinho(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "productId",
+                  "color",
+                  "quantity"
+                ]
+              },
+              {
+                "cells": [
+                  "17",
+                  "BLACK",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 25109200,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 998700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 19,
+            "name": "o produto é adicionado no carrinho caso tenha em estoque",
+            "match": {
+              "location": "com.br.advantage.steps.OrderSteps.oProdutoÉAdicionadoNoCarrinho()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Order"
+          },
+          {
+            "name": "@AddProduct"
+          },
+          {
+            "name": "@Order"
+          }
+        ]
+      }
+    ],
+    "name": "Cenarios contemplando a inserçao de um item no carrinho",
+    "description": "",
+    "id": "cenarios-contemplando-a-inserçao-de-um-item-no-carrinho",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/order/Order.feature",
+    "tags": [
+      {
+        "name": "@Order",
+        "type": "Tag",
+        "location": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 9,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-11T15:36:36.818Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.br.advantage.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Validar pagamento de compra via SafePay",
+        "description": "",
+        "id": "fluxo-contemplando-compra-de-um-item-via-metodo-safepay;validar-pagamento-de-compra-via-safepay",
+        "after": [
+          {
+            "result": {
+              "duration": 320083000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.br.advantage.steps.Hooks.clearShopCart()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 498424700,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1005500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "o usuario queira fazer o pagamento de um item de seu carrinho",
+            "match": {
+              "location": "com.br.advantage.steps.SafePaySteps.ousuarioqueirafazeropagamentodeumitemdeseucarrinho()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 345840000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "inserir os dados para pagamento via SafePay",
+            "match": {
+              "location": "com.br.advantage.steps.SafePaySteps.inserirOsDadosParaPagamentoViaSafePay(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Phone",
+                  "ReceivingAmountCurrency",
+                  "ReceivingCardAccountNumber"
+                ]
+              },
+              {
+                "cells": [
+                  "912345678",
+                  "USD",
+                  "843200971"
+                ]
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 5513800,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1001000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.br.advantage.steps.Hooks.setup()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "é retornado uma mensagem com os dados da compra realizada",
+            "match": {
+              "location": "com.br.advantage.steps.SafePaySteps.éRetornadoUmaMensagemComOsDadosDaCompraRealizada()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Safepay"
+          },
+          {
+            "name": "@Safepay"
+          }
+        ]
+      }
+    ],
+    "name": "Fluxo contemplando compra de um item via metodo safepay",
+    "description": "",
+    "id": "fluxo-contemplando-compra-de-um-item-via-metodo-safepay",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/safepay/SafePay.feature",
+    "tags": [
+      {
+        "name": "@Safepay",
+        "type": "Tag",
+        "location": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
